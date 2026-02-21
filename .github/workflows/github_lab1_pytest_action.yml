@@ -25,6 +25,9 @@ jobs:
 
     - name: Run unittests
       run: python -m unittest test.test_unittest
+    
+    - name: Run pytest for entire folder
+      run : pytest -v
 
     - name: Upload test results
       if: always()
